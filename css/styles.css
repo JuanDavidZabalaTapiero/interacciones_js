@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+section{
+    width: 100%;
+    min-height: 100vh;
+    background: url(../img/fondo.jpg);
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+div#fila{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 0 auto;
+    min-height: 70vh;
+    padding-top: 120px;
+}
+div.col-izq, div.col-der{
+    border: 1px solid white;
+    width: 50%;
+    text-align: center;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.753);
+    height: 600px;
+}
+button{
+    font-family: "Lato", sans-serif;
+    background: white;
+    color: black;
+    padding: 10px 30px;
+    margin: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+button:hover{
+    transform: scale(.9);
+    background: black;
+    color: white;
+}
+h2{
+    font-family: "Lato", sans-serif;
+    font-size: 50px;
+    color: #ffffff;
+    padding: 20px;
+    margin: 10px 30px;
+    border-bottom: 1px solid white;
+}
+div#figura{
+    height: 210px;
+    width: 210px;
+    margin: 100px auto;
+    background: white;
+    transition: 1s;
+}
+#figura.circulo{
+    border-radius: 50%;
+    transform: rotate(180deg) scale(1.5);
+}
+#figura.rectangulo{
+    height: 320px;
+}
+#figura.degradado{
+    background: linear-gradient(red, yellow);
+}
+#figura.gif{
+    background: url(../img/gif.gif);
+    background-size: cover;
+}
+#figura.luna{
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+#figura.luna::before{
+    width: 210px;
+    height: 210px;
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background: #000000;
+    left: 90px;
+}
+#figura.estrella{
+    clip-path: polygon(
+        50% 0%, 61% 35%, 98% 35%, 68% 57%, 
+        79% 91%, 50% 70%, 21% 91%, 32% 57%, 
+        2% 35%, 39% 35%
+        );
+    transform: rotate(35deg);
+}
+#figura.triangulo{
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+#figura.top{
+    transform: translateY(-100px);
+}
+#figura.bottom{
+    transform: translateY(100px);
+}
+#figura.left{
+    transform: translateX(-200px);
+}
+#figura.right{
+    transform: translateX(200px);
+}
+/* Panel lateral y superior */
+#panel-lateral{
+    width: 400px;
+    height: 100%;
+    position: absolute;
+    left: -450px;
+    top: 0;
+    z-index: 9;
+    background: white;
+    transition: 1s;
+    border-radius: 0 10px 10px 0;
+}
+#panel-lateral.active{
+    left: 0;
+}
+#panel-lateral h2{
+    color: black;
+    font-size: 40px;
+    padding: 40px 30px;
+}
+#panel-lateral ul{
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+#panel-lateral ul a{
+    display: block;
+    padding: 20px;
+    background: black;
+    color: white;
+    margin: 20px 0;
+    text-decoration: none;
+    font-size: 22px;
+    transition: .5s;
+}
+#panel-lateral ul a:hover{
+    border-radius: 20px;
+}
+
+#panel-superior{
+    width: 100%;
+    height: 450px;
+    top: -500px;
+    position: absolute;
+    background: rgba(0, 0, 255, 0.842);
+    z-index: 9;
+    transition: 1s;
+    text-align: center;
+}
+#panel-superior.active{
+    top: 0;
+}
+#panel-superior h2{
+    text-align: center;
+    font-size: 40px;
+}
+#panel-superior iframe{
+    margin: auto 0;
+}
+
+#figura.diagonal{
+    transform: translate(100px, 100px)
+}
+section.bgGeneral{
+    background: url(../img/bh.jpg);
+    background-size: cover;
+}
+
+#section.noImg{
+    background: none;
+}

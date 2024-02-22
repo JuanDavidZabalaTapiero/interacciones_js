@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header></header>
+
+    <main>
+        <section id="section">
+            <div id="panel-lateral">
+                <h2>Menú Principal</h2>
+                <ul>
+                    <a href="#">Inicio</a>
+                    <a href="#">Perfil</a>
+                    <a href="#">Estudios</a>
+                    <a href="#">Hobbies</a>
+                    <a href="#">Habilidades</a>
+                </ul>
+            </div>
+
+            <div id="panel-superior">
+                <h2>Video</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/AF8d72mA41M?si=107il8Q0szg6c355" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+            <div id="fila">
+                <div class="col-izq">
+                    <h2>Interacciones</h2>
+                    <button onclick="circulo()">CIRCULO</button>
+                    <button onclick="rectangulo()">RECTANGULO</button>
+                    <button onclick="degradado()">DEGRADADO</button>
+                    <button onclick="gif()">GIF</button>
+                    <button onclick="luna()">LUNA</button>
+                    <button onclick="estrella()">ESTRELLA</button>
+                    <button onclick="triangulo()">TRIANGULO</button>
+                    <button onclick="moveTop()">TOP</button>
+                    <button onclick="moveBottom()">BOTTOM</button>
+                    <button onclick="moveLeft()">LEFT</button>
+                    <button onclick="moveRight()">RIGHT</button>
+                    <button onclick="moveDiagonal()">DIAGONAL</button>
+                    <button onclick="panelLateral()">PANEL LETERAL</button>
+                    <button onclick="panelSuperior()">PANEL SUPERIOR</button>
+                    <button onclick="bgGeneral()">BACKGROUND GENERAL</button>
+                    <button onclick="ingresarBg()">BG INGRESADO POR EL USUARIO</button>
+                </div>
+                <div class="col-der">
+                    <h2 id="txt-figura">Figura</h2>
+                    <div id="figura">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
